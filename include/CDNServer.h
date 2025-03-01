@@ -10,6 +10,12 @@ public:
     // Constructor initializes the server with a usage count of zero
     CDNServer() : usage_count(0) {}
 
+    void clearWords()
+    {
+        words.clear();
+        usage_count = 0;
+    }
+
     // Adds a word to the server's internal storage
     void addWord(const std::string& word) {
         words.insert(word);  // Insert the word into the unordered set

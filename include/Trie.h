@@ -58,6 +58,7 @@ public:
 
 private:
     Node* root;
+    void copyNodes(Node* thisNode, Node* otherNode);
 };
 
 #endif // TRIE_H
